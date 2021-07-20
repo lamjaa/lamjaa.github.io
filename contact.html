@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="with=device-width, initial-scale=1.0 user-scalable=yes">
+    <title> Lam Jian An </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Coda&family=Open+Sans+Condensed:ital,wght@0,300;0,700;1,300&family=Rajdhani:wght@400;500;600;700&family=Zen+Loop&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+  </head>
+<section class="subb-header">
+        <nav>
+          <a href="index.html"><img src="images/logo.png"></a>
+          <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+              <ul>
+                <li><a href="index.html"> HOME </a></li>
+                <li><a href="blog.html"> EXPERIENCE  </a></li>
+                <li><a href="project.html"> PROJECT </a></li>
+                <li><a href="contact.html"> CONTACT </a></li>
+            </ul>
+          </div>
+          <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <section class="secondsec">
+        <div class="text-box">
+            <h1 class="animate__animated animate__rubberBand"> Let's Connect </h1>
+</div>
+</section>
+</section>
+
+<!------------contacts----------->
+<section class="icons">
+    <ul>
+      <li><a href="https://www.instagram.com/lamjaa_/"><i class="fa fa-instagram"></i></a></li>
+      <li><a href="https://www.linkedin.com/in/jian-an-lam/"><i class="fa fa-linkedin-square"></i></a></li>
+      <li><a href="https://www.youtube.com/channel/UCaUFJlQi7F4RQsTA9JxGYsQ"><i class="fa fa-youtube-play"></i></a></li>
+    </ul>
+</section>
+
+<!--------namecard----------------->
+<style>
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: serif;
+}
+
+.title {
+  color: grey;
+  font-size: 18px;
+}
+
+button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+a {
+  text-decoration: none;
+  font-size: 22px;
+  color: black;
+}
+
+button:hover, a:hover {
+  opacity: 1.7;
+}
+</style>
+</head>
+<body>
+
+<h2 style="text-align:center"></h2>
+<section class="lastsec">
+<div class="card">
+  <img src="images/myface.png" alt="John" style="width:100%">
+  <h1> Lam Jian An </h1>
+  <p class="title">First Year Student</p>
+  <p>Heriot-Watt University</p>
+  <div style="margin: 24px 0;">
+    <a href="#"><i class="fa fa-instagram"></i></a>
+    <p> @lamjaa_ </p>
+    <a href="#"><i class="fa fa-youtube-play"></i></a>
+    <p> Lamja </p>
+    <a href="#"><i class="fa fa-linkedin-square"></i></a>
+    <p> Lam Jian An </p>
+  </div>
+  <p><button>Let's Connect</button></p>
+</div>
+
+</body>
+
+
+<!-------------------confetti---------->
+    <script src="./confetti.js"></script>
+    <script>
+      const start = () => {
+        setTimeout(function() {
+            confetti.start();
+          },1000);
+      };
+      start();
+    </script>
+    <script>
+    const stop = () => {
+      setTimeout(function(){
+        confetti.stop();
+      },5000)
+    }
+    start();
+    stop();
+  </script>
+
+
+<!---JavaScript for Toggle Menu------------>
+
+<script>
+
+    var navLinks = document.getElementById("navLinks");
+    function showMenu() {
+      navLinks.style.right = "0";
+    }
+    function hideMenu() {
+      navLinks.style.right = "-200px";
+    }
+
+</script>

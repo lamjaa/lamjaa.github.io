@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="with=device-width, initial-scale=1.0 user-scalable=yes">
+    <title> The Lamjaa Portfolio Site </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Coda&family=Open+Sans+Condensed:ital,wght@0,300;0,700;1,300&family=Rajdhani:wght@400;500;600;700&family=Zen+Loop&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<head>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+</head>
+<body>
+<section class="header">
+        <nav>
+          <a href="index.html"><img src="images/logo.png"></a>
+          <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+              <ul>
+                <li><a href="index.html"> HOME </a></li>
+                <li><a href="blog.html"> EXPERIENCE </a></li>
+                <li><a href="project.html"> PROJECT </a></li>
+                <li><a href="contact.html"> CONTACT </a></li>
+            </ul>
+          </div>
+          <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+<section class="firstsec">
+<div class="text-box">
+    <h1> I am @lamjaa, welcome to my site! </h1>
+    <p class="animate__animated animate__rollIn"> First Year Statistical Data Science Student
+    <br> passionate in data and statistics
+    </p>
+
+</div>
+</section>
+</section>
+
+<!------- About Me ----------->
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light+Two&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+</style>
+
+<section class="course">
+    <h1> About Me </h1>
+    <div class="row">
+      <div class="course-col">
+        <h3> Who Am I? </h3>
+        <p> Hello everyone !<br>  My name is <strong class="highlight"> Lam Jian An. </strong> <br> I'm from Selangor, Malaysia.
+        </p>
+      </div>
+      <div class="course-col">
+        <h3> Where Am I Studying Now? </h3>
+        <p> I'm a currently a student in  <strong class="highlight"> Heriot-Watt University Malaysia </strong> studying Statistical Data Science.
+          I chose this course because I personally love data & statistics, and looking forward to dig more into the data science world.
+        </p>
+      </div>
+      <div class="course-col">
+        <h3> What Is My Hobby? </h3>
+        <p> I'm an <strong class="highlight"> outdoor person. </strong> I love activities like hiking, diving and camping !
+        </p>
+      </div>
+    </div>
+</section>
+
+<!------ Education----->
+<section class="campus">
+    <h1> Education </h1>
+
+      <div id="mycard" class="column">
+      <div class="card">
+  <div class="card__content">
+    <div class="card__front">
+      <h3 class="card__title">High <br> School</h3>
+    </div>
+    <div class="card__back">
+      <p class="card__body">Catholic High School, Petaling Jaya <br> 2014-2018 <br> <img src="images/chs.jpg"> </p>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+
+    <div id="mycard" class="column">
+    <div class="card">
+  <div class="card__content">
+  <div class="card__front">
+    <h3 class="card__title"> College </h3>
+  </div>
+  <div class="card__back">
+    <p class="card__body"> Inti College, Subang Jaya <br> 2019-2020  <br> <img src="images/inti.jpg"> </p>
+  </div>
+  </div>
+</div>
+</div>
+
+    <div id="mycard" class="column">
+    <div class="card">
+  <div class="card__content">
+  <div class="card__front">
+    <h3 class="card__title"> University </h3>
+</div>
+<div class="card__back">
+    <p class="card__body"> Heriot-Watt University, Putrajaya <br> 2020-Present <br> <img src="images/hwum.png"> </p>
+    </div>
+    </div>
+</div>
+</div>
+</section>
+
+
+<!---JavaScript for Toggle Menu------------>
+
+<script>
+
+    var navLinks = document.getElementById("navLinks");
+    function showMenu() {
+      navLinks.style.right = "0";
+    }
+    function hideMenu() {
+      navLinks.style.right = "-200px";
+    }
+
+</script>
+
+<style>
+
+</style>

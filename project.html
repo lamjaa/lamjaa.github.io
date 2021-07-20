@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="with=device-width, initial-scale=1.0 user-scalable=yes">
+    <title> Lam Jian An </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Coda&family=Open+Sans+Condensed:ital,wght@0,300;0,700;1,300&family=Rajdhani:wght@400;500;600;700&family=Zen+Loop&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+  </head>
+<section class="subbb-header">
+        <nav>
+          <a href="index.html"><img src="images/logo.png"></a>
+          <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+              <ul>
+                <li><a href="index.html"> HOME </a></li>
+                <li><a href="blog.html"> EXPERIENCE </a></li>
+                <li><a href="project.html"> PROJECT </a></li>
+                <li><a href="contact.html"> CONTACT </a></li>
+            </ul>
+          </div>
+          <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+            <div class="container counter">
+  <h1 id="head">COMING SOON</h1>
+  <ul>
+    <li><span id="days"></span>days</li>
+    <li><span id="hours"></span>Hours</li>
+    <li><span id="minutes"></span>Minutes</li>
+    <li><span id="seconds"></span>Seconds</li>
+  </ul>
+</div>
+</div>
+</section>
+</section>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Tourney:wght@100;200&display=swap');
+</style>
+
+<style>
+* {
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+
+h1 {
+  font-size: 100px;
+}
+body {
+background-image : url(images/image12.jpg);
+
+}
+
+.container.counter {
+color: white;
+text-align: center;
+}
+
+.counter h1 {
+font-weight: normal;
+font-family: 'Tourney', cursive;
+}
+
+.counter li {
+display: inline-block;
+font-size: 40px;
+list-style-type: none;
+padding: 1em;
+text-transform: uppercase;
+color: white;
+font-family: 'Tourney', cursive;
+}
+
+.counter li span {
+display: block;
+font-size: 40px;
+font-family: 'Tourney', cursive;
+color: white;
+}
+
+@media only screen and (max-width:1100px) and (min-device-width : 320px) {
+  h1 {
+  font-size: 50px;}
+}
+</style>
+
+<script>
+window.console = window.console || function(t) {};
+</script>
+
+
+
+<script>
+if (document.location.search.match(/type=embed/gi)) {
+  window.parent.postMessage("resize", "*");
+}
+</script>
+
+
+<script src="https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-8216c69d01441f36c0ea791ae2d4469f0f8ff5326f00ae2d00e4bb7d20e24edb.js"></script>
+
+
+      <script id="rendered-js" >
+const second = 1000,
+minute = second * 60,
+hour = minute * 60,
+day = hour * 24;
+
+let countDown = new Date('Mar 29, 2022 00:00:00').getTime(),
+x = setInterval(function () {
+
+  let now = new Date().getTime(),
+  distance = countDown - now;
+
+  document.getElementById('days').innerText = Math.floor(distance / day),
+  document.getElementById('hours').innerText = Math.floor(distance % day / hour),
+  document.getElementById('minutes').innerText = Math.floor(distance % hour / minute),
+  document.getElementById('seconds').innerText = Math.floor(distance % minute / second);
+
+}, second);
+//# sourceURL=pen.js
+    </script>
+
+
+
+</body>
+
+
+
+<!---JavaScript for Toggle Menu------------>
+
+<script>
+
+    var navLinks = document.getElementById("navLinks");
+    function showMenu() {
+      navLinks.style.right = "0";
+    }
+    function hideMenu() {
+      navLinks.style.right = "-200px";
+    }
+
+</script>

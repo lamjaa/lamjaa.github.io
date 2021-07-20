@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="with=device-width, initial-scale=1.0 user-scalable=yes">
+    <title> Lam Jian An </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Coda&family=Open+Sans+Condensed:ital,wght@0,300;0,700;1,300&family=Rajdhani:wght@400;500;600;700&family=Zen+Loop&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<head>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+</head>
+
+<body>
+<section class="sub-header">
+        <nav>
+          <a href="index.html"><img src="images/logo.png"></a>
+          <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+              <ul>
+                <li><a href="index.html"> HOME </a></li>
+                <li><a href="blog.html"> EXPERIENCE </a></li>
+                <li><a href="project.html"> PROJECT </a></li>
+                <li><a href="contact.html"> CONTACT </a></li>
+            </ul>
+          </div>
+          <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <section class="secondsec">
+        <div class="text-box">
+        <h1 class="animate__animated animate__fadeInDown"> Experiences </h1>
+        <p class="animate__animated animate__jello">  Scroll down to view </p>
+</div>
+</section>
+</section>
+
+<!------------Blog----------->
+
+<style>
+*,
+*::before,
+*::after {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+.nav-links{
+  flex: 1;
+  text-align: right;
+}
+.nav-links ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 8px 12px;
+  position: relative;
+}
+.nav-links ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 13px;
+}
+.nav-links ul li::after {
+  content: '';
+  width: 0%;
+  height: 2px;
+  background: #f44336;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+.nav-links ul li:hover::after {
+  width: 100%;
+}
+body {
+font: normal 16px/1.5 "Titillium Web", sans-serif;
+background-image: linear-gradient(#d6d9e2,#ece7e4,#dfdfe1,#cdd4dc,#b4c4d1,#9aafc4);
+color: #3c3f64;
+overflow-x: hidden;
+padding-bottom: 50px;
+}
+.discovery h1 {
+  line-height: 30px;
+  min-height:75px;
+  height: 50px;
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+.discovery p {
+  margin-bottom: 30px;
+}
+.timeline ul li {
+list-style-type: none;
+position: relative;
+width: 6px;
+margin: 0 auto;
+padding-top: 50px;
+background: #fff;
+}
+.timeline ul li::after {
+content: "";
+position: absolute;
+left: 50%;
+bottom: 0;
+transform: translateX(-50%) rotate(45deg);
+width: 20px;
+height: 20px;
+z-index: 2;
+background: #696969;
+}
+.timeline ul li div {
+position: relative;
+bottom: 0;
+width: 400px;
+padding: 20px;
+background: #fff;
+border-radius: 10px;
+display: flex;
+align-items: center;
+text-align: center;
+}
+.timeline ul li div time {
+position: absolute;
+background: #f5af19;
+width: 180px;
+height: 30px;
+top: -15px;
+border-radius: 5px;
+display: flex;
+justify-content: center;
+align-items: center;
+letter-spacing: 2px;
+font-family: 'Open Sans Condensed', sans-serif;
+font-weight: bold;
+}
+.timeline ul li div div {
+height: 400px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+.timeline ul li div div p {
+text-align: center;
+}
+.timeline ul li div .discovery {
+margin-right: 10px;
+}
+.timeline ul li:nth-of-type(odd) > div {
+left: 45px;
+}
+.timeline ul li:nth-of-type(even) > div {
+left: -439px;
+}
+
+.timeline ul li div {
+visibility: hidden;
+opacity: 0;
+transition: all 0.5s ease-in-out;
+}
+.timeline ul li:nth-of-type(odd) div {
+transform: translate3d(100px, -10px, 0) rotate(10deg);
+}
+.timeline ul li:nth-of-type(even) div {
+transform: translate3d(-100px, -10px, 0) rotate(10deg);
+}
+.timeline ul li.in-view div {
+transform: none;
+visibility: visible;
+opacity: 1;
+}
+
+@media screen and (max-width: 1100px) and (min-device-width : 320px)  {
+.timeline ul li div {
+  width: 250px;
+  flex-direction: column;
+}
+.timeline ul li div div {
+  margin: 10px;
+  height: 450px;
+}
+.timeline ul li:nth-of-type(even) > div {
+  left: -289px;
+}
+.secondsec .text-box p {
+  font-size: 20px;
+}
+.secondsec h1 {
+ font-family: sans-serif;
+  }
+  .discovery h1 {
+    margin-bottom: 30px;
+    margin-top: 20px;
+    line-height: 25px;
+    min-height: 75px;
+    height: 50px;
+  }
+
+@media screen and (max-width: 1100px) and (min-device-width : 320px)   {
+body {
+background-image: linear-gradient(#d6d9e2,#ece7e4,#dfdfe1,#cdd4dc,#b4c4d1,#9aafc4);
+}
+
+.timeline ul li {
+  margin-left: 20px;
+}
+.timeline ul li div {
+  width: calc(77vw - 50px);
+}
+.timeline ul li:nth-of-type(even) > div {
+  left: 45px;
+}
+
+</style>
+
+<script>
+window.console = window.console || function(t) {};
+</script>
+
+
+
+<script>
+if (document.location.search.match(/type=embed/gi)) {
+  window.parent.postMessage("resize", "*");
+}
+</script>
+
+
+</head>
+
+<body translate="no" >
+<section class="timeline">
+    <ul>
+      <li>
+        <div>
+          <time> 2021 Jul </time>
+          <div class="discovery">
+            <h1> Maybank M-Dash </h1>
+            <p>
+              A virtual race organised by Maybank. <br>
+              It has 5 stages in total & I ended my journey at the 4th stage where my final placing is 31st out of 300+ participants.
+            </p>
+          </div>
+
+        </div>
+      </li>
+      <li>
+        <div>
+          <time>2021 Apr </time>
+          <div class="discovery">
+            <h1> Online Environmental Awareness Campaign </h1>
+            <p>
+            Organized an online campaigning project about environmental awareness & created an environmental awareness page on instagram (@bumikitar). </p>
+            <p>
+            Developed an AR filter for instagram story using SparkAR.
+            </p>
+          </div>
+
+        </div>
+      </li>
+      <li>
+        <div>
+          <time>2020 Sept-Present</time>
+          <div class="discovery">
+            <h1>Student Ambassador, <br> Heriot-Watt University</h1>
+            <p>
+              Participated in EGIS (School of Energy, Geoscience, Infrastructure, and Society) market survey on what courses to introduce in the future. </p>
+            <p> Gathered various data from universities around the world.
+            </p>
+          </div>
+
+        </div>
+        </li>
+        <li>
+        <div>
+          <time>2020 June</time>
+          <div class="discovery">
+            <h1>Inti College A-Levels Valedictorian </h1>
+            <p>
+              Scored 3A* & 1A in GCE A-Level examination. </p>
+              <p> Subjects: <br> Mathematics <br> Chemistry <br> Biology <br> Physics
+            </p>
+          </div>
+
+        </div>
+      </li>
+      <li>
+        <div>
+          <time>2019 Aug </time>
+          <div class="discovery">
+            <h1>Volvo Trucks CSR Project</h1>
+            <p>
+              Planned and organised activities for the Volvo Trucks family day. </p>
+              <p> Conducted an activity to raise awareness about road safety and blind spots based on real scenarios.
+            </p>
+          </div>
+
+        </div>
+      </li>
+      <li>
+        <div>
+          <time>2018 Aug </time>
+          <div class="discovery">
+            <h1> King's Scout Award</h1>
+            <p>
+              Highest award of the Scouts Association of Malaysia (PPM). </p> <p> The King's Scout Certificate is signed by His Majesty the Yang di-Pertuan Agong of Malaysia and all the sultans in Malaysia.
+            </p> <p> Received an addiitonal of 2 awards on backwoods and lashings category.
+          </div>
+
+        </div>
+      </li>
+      <li>
+        <div>
+          <time>2014 Jan-2018 Aug</time>
+          <div class="discovery">
+            <h1>Scouts, CHSPJ</h1>
+            <p>
+              Secretary (2017-2018) </p> <p>
+              Organized 60th anniversary diamond jubilee campfire. </p> <p>
+              Volunteered at various places such as Buddhist lodge & Malaysian child welfare association.
+            </p>
+          </div>
+
+        </div>
+      </li>
+      <li>
+        <div>
+          <time>2017 Mar-2018 Sept</time>
+          <div class="discovery">
+            <h1>Cheerleading, CHSPJ</h1>
+            <p>
+              Treasurer (2017-2018) </p> <p>
+              Participated in national level competitions. </p> <p>
+              Charm Cheerleading Championship: <br> Silver Medal (2017) <br>
+              Gold Medal (2018) </p> <p>
+              The Star, Cheer18: <br> Silver Medal (2018)
+            </p>
+          </div>
+
+        </div>
+      </li>
+    </ul>
+  </section>
+  <script src="https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-8216c69d01441f36c0ea791ae2d4469f0f8ff5326f00ae2d00e4bb7d20e24edb.js"></script>
+
+
+    <script id="rendered-js" >
+var items = document.querySelectorAll(".timeline li");
+
+function isElementInViewport(el) {
+var rect = el.getBoundingClientRect();
+return (
+  rect.top >= 0 &&
+  rect.left >= 0 &&
+  rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+  rect.right <= (window.innerWidth || document.documentElement.clientWidth));
+
+}
+
+function callbackFunc() {
+for (var i = 0; i < items.length; i++) {if (window.CP.shouldStopExecution(0)) break;
+  if (isElementInViewport(items[i])) {
+    if (!items[i].classList.contains("in-view")) {
+      items[i].classList.add("in-view");
+    }
+  } else if (items[i].classList.contains("in-view")) {
+    items[i].classList.remove("in-view");
+  }
+}window.CP.exitedLoop(0);
+}
+
+window.addEventListener("load", callbackFunc);
+window.addEventListener("scroll", callbackFunc);
+//# sourceURL=pen.js
+  </script>
+
+
+
+</body>
+
+</html>
+
+<!---JavaScript for Toggle Menu------------>
+
+<script>
+
+    var navLinks = document.getElementById("navLinks");
+    function showMenu() {
+      navLinks.style.right = "0";
+    }
+    function hideMenu() {
+      navLinks.style.right = "-200px";
+    }
+
+</script>
